@@ -23,4 +23,7 @@ describe('leapYear', function() {
     expect(leapYear(-1)).to.equal(false);
   });
 
+  it("is true if no input given by user", function() {
+    expect(leapYear(" ")).to.equal(true);
+  });
 });

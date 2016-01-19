@@ -2,7 +2,9 @@ var leapYear = function(year) {
   if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
     return true;
   } else if (year === NaN) {
-      return false;
+    return false;
+  } else if (year >= 1) {
+    return false;
   } else {
     return false;
   }
